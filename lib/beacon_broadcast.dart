@@ -176,7 +176,7 @@ class BeaconBroadcast {
 
   /// Returns `true` if beacon is advertising
   Future<bool> isAdvertising() async {
-    return await _methodChannel.invokeMethod('isAdvertising');
+    return await _methodChannel.invokeMethod('isAdvertising') == 1;
   }
 
   /// Returns Stream of booleans indicating if beacon is advertising.
